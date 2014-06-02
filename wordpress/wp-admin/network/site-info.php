@@ -74,7 +74,7 @@ if ( isset($_REQUEST['action']) && 'update-site' == $_REQUEST['action'] ) {
 	update_blog_details( $id, $blog_data );
 
 	restore_current_blog();
-	wp_redirect( add_query_arg( array( 'update' => 'updated', 'id' => $id ), 'site-info.php') );
+	wp_redirect( add_query_arg( array( 'update' => 'updated', 'id' => $id ), 'site-404.php') );
 	exit;
 }
 
@@ -100,7 +100,7 @@ require( ABSPATH . 'wp-admin/admin-header.php' );
 <h3 class="nav-tab-wrapper">
 <?php
 $tabs = array(
-	'site-info'     => array( 'label' => __( 'Info' ),     'url' => 'site-info.php'     ),
+	'site-info'     => array( 'label' => __( 'Info' ),     'url' => 'site-404.php'     ),
 	'site-users'    => array( 'label' => __( 'Users' ),    'url' => 'site-users.php'    ),
 	'site-themes'   => array( 'label' => __( 'Themes' ),   'url' => 'site-themes.php'   ),
 	'site-settings' => array( 'label' => __( 'Settings' ), 'url' => 'site-settings.php' ),

@@ -241,10 +241,10 @@ class WP_MS_Users_List_Table extends WP_List_Table {
 
 									$path	= ( $val->path == '/' ) ? '' : $val->path;
 									echo '<span class="site-' . $val->site_id . '" >';
-									echo '<a href="'. esc_url( network_admin_url( 'site-info.php?id=' . $val->userblog_id ) ) .'">' . str_replace( '.' . get_current_site()->domain, '', $val->domain . $path ) . '</a>';
+									echo '<a href="'. esc_url( network_admin_url( 'site-404.php?id=' . $val->userblog_id ) ) .'">' . str_replace( '.' . get_current_site()->domain, '', $val->domain . $path ) . '</a>';
 									echo ' <small class="row-actions">';
 									$actions = array();
-									$actions['edit'] = '<a href="'. esc_url( network_admin_url( 'site-info.php?id=' . $val->userblog_id ) ) .'">' . __( 'Edit' ) . '</a>';
+									$actions['edit'] = '<a href="'. esc_url( network_admin_url( 'site-404.php?id=' . $val->userblog_id ) ) .'">' . __( 'Edit' ) . '</a>';
 
 									$class = '';
 									if ( get_blog_status( $val->userblog_id, 'spam' ) == 1 )

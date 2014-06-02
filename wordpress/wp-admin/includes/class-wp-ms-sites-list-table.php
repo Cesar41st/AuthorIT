@@ -241,7 +241,7 @@ class WP_MS_Sites_List_Table extends WP_List_Table {
 
 					case 'blogname':
 						echo "<td class='column-$column_name $column_name'$style>"; ?>
-							<a href="<?php echo esc_url( network_admin_url( 'site-info.php?id=' . $blog['blog_id'] ) ); ?>" class="edit"><?php echo $blogname . $blog_state; ?></a>
+							<a href="<?php echo esc_url( network_admin_url( 'site-404.php?id=' . $blog['blog_id'] ) ); ?>" class="edit"><?php echo $blogname . $blog_state; ?></a>
 							<?php
 							if ( 'list' != $mode ) {
 								switch_to_blog( $blog['blog_id'] );
@@ -259,7 +259,7 @@ class WP_MS_Sites_List_Table extends WP_List_Table {
 								'visit' => '',
 							);
 
-							$actions['edit']	= '<span class="edit"><a href="' . esc_url( network_admin_url( 'site-info.php?id=' . $blog['blog_id'] ) ) . '">' . __( 'Edit' ) . '</a></span>';
+							$actions['edit']	= '<span class="edit"><a href="' . esc_url( network_admin_url( 'site-404.php?id=' . $blog['blog_id'] ) ) . '">' . __( 'Edit' ) . '</a></span>';
 							$actions['backend']	= "<span class='backend'><a href='" . esc_url( get_admin_url( $blog['blog_id'] ) ) . "' class='edit'>" . __( 'Dashboard' ) . '</a></span>';
 							if ( get_current_site()->blog_id != $blog['blog_id'] ) {
 								if ( get_blog_status( $blog['blog_id'], 'deleted' ) == '1' )

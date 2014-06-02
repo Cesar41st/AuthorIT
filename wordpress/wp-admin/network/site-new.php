@@ -100,7 +100,7 @@ Name: %3$s' ), $current_user->user_login , get_site_url( $id ), wp_unslash( $tit
 if ( isset($_GET['update']) ) {
 	$messages = array();
 	if ( 'added' == $_GET['update'] )
-		$messages[] = sprintf( __( 'Site added. <a href="%1$s">Visit Dashboard</a> or <a href="%2$s">Edit Site</a>' ), esc_url( get_admin_url( absint( $_GET['id'] ) ) ), network_admin_url( 'site-info.php?id=' . absint( $_GET['id'] ) ) );
+		$messages[] = sprintf( __( 'Site added. <a href="%1$s">Visit Dashboard</a> or <a href="%2$s">Edit Site</a>' ), esc_url( get_admin_url( absint( $_GET['id'] ) ) ), network_admin_url( 'site-404.php?id=' . absint( $_GET['id'] ) ) );
 }
 
 $title = __('Add New Site');

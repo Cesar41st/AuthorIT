@@ -188,7 +188,7 @@ var current_site_id = <?php echo $id; ?>;
 <h3 class="nav-tab-wrapper">
 <?php
 $tabs = array(
-	'site-info'     => array( 'label' => __( 'Info' ),     'url' => 'site-info.php'     ),
+	'site-info'     => array( 'label' => __( 'Info' ),     'url' => 'site-404.php'     ),
 	'site-users'    => array( 'label' => __( 'Users' ),    'url' => 'site-users.php'    ),
 	'site-themes'   => array( 'label' => __( 'Themes' ),   'url' => 'site-themes.php'   ),
 	'site-settings' => array( 'label' => __( 'Settings' ), 'url' => 'site-settings.php' ),
