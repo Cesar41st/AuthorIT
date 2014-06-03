@@ -29,10 +29,12 @@
 
 <body class="authorit_body">
 
-    <header>
+    <div class="container">
 
-        <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+        <header>
 
-        <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 
-    </header>
+            <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+
+        </header>
