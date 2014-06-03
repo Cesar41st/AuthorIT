@@ -30,11 +30,10 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.less" type="text/less" />
 
-
     <script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/js/boostrap.min.js"></script>
     <script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/js/less-1.7.0.min.js"></script>
 
-    <?php wp_head(); ?>
+
 
 </head>
 
@@ -44,9 +43,26 @@
 
         <header>
 
-            <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="<?php echo wp_login_url(); ?>" title="Login">Se connecter</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div><!--/.container-fluid -->
+            </div>
 
-            <a href="<?php echo wp_login_url(); ?>" title="Login">Se connecter</a>
+
+
+            <?php get_search_form(); ?>
+
+
+
+
 
             <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 
