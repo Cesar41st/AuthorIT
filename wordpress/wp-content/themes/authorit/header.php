@@ -50,6 +50,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="<?php echo wp_login_url(); ?>" title="Login">Se connecter</a></li>
+                            <li><a href="<?php echo wp_registration_url(); ?>" title="Enregistrer">S'enregistrer</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
