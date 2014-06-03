@@ -17,8 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php wp_title('&#124;', true, 'right'); ?></title>
 
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/authorit.css" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.less" type="text/css" />
 
 
     <scrip src="<?php bloginfo('template_directory'); ?>/js/boostrap.min.js"></scrip>
