@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php wp_title('&#124;', true, 'right'); ?></title>
 
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.less" type="text/css" />
 
