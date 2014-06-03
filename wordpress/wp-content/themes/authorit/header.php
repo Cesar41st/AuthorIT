@@ -57,6 +57,7 @@
             </div>
 
             <?php get_search_form(); ?>
+            <i class="fa fa-search"></i>
 
 
             <div id="header_logo">
