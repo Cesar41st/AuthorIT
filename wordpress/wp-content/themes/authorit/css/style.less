@@ -430,18 +430,28 @@ header {
   }
   #menu-header-menu {
     height: 53px;
+    .publiez-livre{
+      padding: 0;
+    }
+    .nouveautes {
+      padding-right: 30px;
+    }
+    .espace-membre {
+      padding-left: 30px;
+    }
     li {
       height: 100%;
       display: inline-block;
       text-align: center;
       a {
+        display: block;
         color: #c8c8c8;
-        font-size: 17px;
+        font-size: 16px;
         text-transform: uppercase;
         height: 100%;
         width: 100%;
         line-height: 53px;
-        :hover {
+        &:hover {
           color: #59a1a3;
         }
       }
@@ -456,6 +466,22 @@ header {
     margin-bottom: 20px;
     .img-responsive {
       display: inline;
+    }
+  }
+  form {
+    .screen-reader-text {
+      display: none;
+    }
+    .search-field {
+      width: 240px;
+      height: 24px;
+      border: 1px solid #e1e1e1;
+      line-height: 24px;
+      padding: 0 25px;
+      text-align: right;
+    }
+    .search-submit{
+
     }
   }
 }
