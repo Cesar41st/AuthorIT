@@ -26,11 +26,10 @@ function authorit_setup() {
     add_image_size( 'authorit-full-width', 1038, 576, true );
 
     // This theme uses wp_nav_menu() in two locations.
-    register_nav_menus( array(
-        'header'   => __( 'Header Menu', 'authorit' ),
-        'social'   => __( 'Social Menu', 'authorit' ),
-        'footer' => __( 'Footer menu', 'authorit' ),
-    ) );
+
+    register_nav_menu('header','Header Menu');
+    register_nav_menu('social','Social Menu');
+    register_nav_menu('footer','Footer menu');
 
     /*
      * Switch default core markup for search form, comment form, and comments
