@@ -24,10 +24,11 @@
     <link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery.js"></script>
 
+
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.less" type="text/css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.less" type="text/less" />
 
 
     <scrip src="<?php bloginfo('template_directory'); ?>/js/boostrap.min.js"></scrip>
