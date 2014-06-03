@@ -24,6 +24,7 @@
 
 
     <scrip src="<?php bloginfo('template_directory'); ?>/js/boostrap.min.js"></scrip>
+    <scrip src="<?php bloginfo('template_directory'); ?>/js/less-1.7.0.min.js"></scrip>
 
     <?php wp_head(); ?>
 
