@@ -31,8 +31,8 @@
 
     <header>
 
-        <?php wp_nav_menu( array( 'theme_location' => 'Social Menu' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 
-        <?php wp_nav_menu( array( 'theme_location' => 'Header Menu' ) ); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 
     </header>
