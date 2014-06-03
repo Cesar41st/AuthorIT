@@ -7,9 +7,8 @@
  */
 ?>
 
-<footer id="footer">
-    <div class="container">
-        <div class="row">
+<section id="footer">
+    <div class="row">
             <div class="col-md-4">
                 <h1>Qui sommes-nous ?</h1>
                 <p>Lorem ipsum</p>
@@ -28,4 +27,4 @@
         </div>
     </div>
 
-</footer>
+</section>
