@@ -9,7 +9,7 @@
 
         <section id="footer">
             <div class="row">
-                <div class=" col-md-offset-2 col-md-2">
+                <div class=" col-md-offset-1 col-md-2">
                         <h1>Qui sommes-nous ?</h1>
                         <p>Lorem ipsum</p>
                 </div>
@@ -19,7 +19,7 @@
                         <p>Lorem ipsum</p>
                 </div>
 
-                <div class=" col-md-offset-2 col-md-2">
+                <div class="  col-md-2 col-md-offset-2">
                         <h1>Conditions</h1>
                         <p>Lorem ipsum</p>
                 </div>

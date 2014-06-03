@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 
-
+<?php the_field('image_slider', 10); ?>
 
 
 
