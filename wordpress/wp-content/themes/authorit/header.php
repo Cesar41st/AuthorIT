@@ -45,6 +45,8 @@
 
             <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>
 
+            <a href="<?php echo wp_login_url(); ?>" title="Login">Se connecter</a>
+
             <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 
         </header>
