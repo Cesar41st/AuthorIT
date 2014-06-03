@@ -31,8 +31,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.less" type="text/less" />
 
 
-    <scrip src="<?php bloginfo('template_directory'); ?>/js/boostrap.min.js"></scrip>
-    <scrip src="<?php bloginfo('template_directory'); ?>/js/less-1.7.0.min.js"></scrip>
+    <script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/js/boostrap.min.js"></script>
+    <script type='text/javascript' src="<?php bloginfo('template_directory'); ?>/js/less-1.7.0.min.js"></script>
 
     <?php wp_head(); ?>
 
