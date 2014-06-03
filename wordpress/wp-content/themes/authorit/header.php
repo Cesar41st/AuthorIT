@@ -56,14 +56,21 @@
                 </div><!--/.container-fluid -->
             </div>
 
-
-
             <?php get_search_form(); ?>
 
+                <!-- Menu -->
+                <div class="sf-contener clearfix col-lg-12">
+                    <?php
 
+                    $defaults = array(
+                        'theme_location' => 'header',
+                    );
 
-
-
-            <?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+                    wp_nav_menu($defaults); ?>
+                </div>
+                <!--/ Menu -->
+                <a href="" title="">
+                    <img class="img-responsive" id="header_image" src="<?php bloginfo('template_directory'); ?>/image/header.jpg" alt="" title="" width="1170" height="65">
+                </a>
 
         </header>

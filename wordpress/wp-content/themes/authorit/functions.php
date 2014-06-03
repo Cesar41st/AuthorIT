@@ -56,3 +56,5 @@ function authorit_setup() {
 }
 endif; // authorit_setup
 add_action( 'after_setup_theme', 'authorit_setup' );
+
+
