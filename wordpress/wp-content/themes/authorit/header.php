@@ -58,6 +58,13 @@
 
             <?php get_search_form(); ?>
 
+
+            <div id="header_logo">
+                <a href="<?php get_site_url(); ?>" title="Logo">
+                    <img class="logo img-responsive" src="<?php bloginfo('template_directory'); ?>/image/logo.png" alt="Logo" width="290" height="109">
+                </a>
+            </div>
+
                 <!-- Menu -->
                 <div class="sf-contener clearfix col-lg-12">
                     <?php
@@ -68,6 +75,7 @@
 
                     wp_nav_menu($defaults); ?>
                 </div>
+
                 <!--/ Menu -->
                 <a href="" title="">
                     <img class="img-responsive" id="header_image" src="<?php bloginfo('template_directory'); ?>/image/header.jpg" alt="" title="" width="1170" height="65">
