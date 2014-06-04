@@ -41,7 +41,4 @@ Template Name: Librairie
 
 </div>
 
-
-<?php var_dump($post_types = get_post_types()); ?>
-
 <?php get_footer(); ?>
