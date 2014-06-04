@@ -83,3 +83,5 @@
                 </a>
 
         </header>
+
+        <div id="wrap_page">
