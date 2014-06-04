@@ -6,29 +6,35 @@
  * Time: 11:07
  */
 ?>
+</div>
+<div class="footer-container">
+    <footer id="footer" class="container">
+        <div class="row">
 
-        <section id="footer">
-            <div class="row">
-                <div class=" col-md-offset-1 col-md-2">
-                        <h1>Qui sommes-nous ?</h1>
-                        <p>Lorem ipsum</p>
-                </div>
+            <?php
 
-                <div class=" col-md-offset-2 col-md-2">
-                        <h1>Le service</h1>
-                        <p>Lorem ipsum</p>
-                </div>
+            $defaults = array(
+                'theme_location' => 'footer',
+            );
 
-                <div class="  col-md-2 col-md-offset-2">
-                        <h1>Conditions</h1>
-                        <p>Lorem ipsum</p>
-                </div>
+            wp_nav_menu($defaults); ?>
 
-                </div>
-            </div>
+        </div>
 
-        </section>
+        <ul class="submenu">
+            <li class="footer-block col-xs-12 col-sm-4">
+                <p>Lorem ipsum</p>
+            </li>
+            <li class="footer-block col-xs-12 col-sm-4">
+                <p>Lorem ipsum</p>
+            </li>
+            <li class="footer-block col-xs-12 col-sm-4">
+                <p>Lorem ipsum</p>
+            </li>
+        </ul>
 
-    </div>
+    </footer>
+    <div id="after_footer"></div>
+</div>
 
 </body>
