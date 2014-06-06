@@ -9,7 +9,15 @@ Template Name: Librairie
 
     <h2>LIBRAIRIE</h2>
 
-    <img class="img-responsive" id="header_image" src="<?php bloginfo('template_directory'); ?>/image/header.jpg" alt="" title="" width="1170" height="65">
+        <?php if( get_field('image_lib') ): ?>
+
+            <div class="img-responsive" id="image_lib">
+                <img src="<?php the_field('image_lib'); ?>" />
+            </div>
+
+
+    <?php endif; ?>
+
 
     <form role="search" method="get" class="search-form-2" action="http://127.0.0.1/github/AuthorIT/wordpress/">
         <label>
