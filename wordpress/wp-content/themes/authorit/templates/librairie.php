@@ -39,8 +39,10 @@ Template Name: Librairie
     );
     ?>
     <?php $all_categories = get_categories( $args );
-    //print_r($all_categories);
-    foreach ($all_categories as $cat) {
+    //print_r($all_categories); ?>
+    <div id="categories">
+
+    <?php foreach ($all_categories as $cat) {
         //print_r($cat);
         if($cat->category_parent == 0) {
             $category_id = $cat->term_id;
@@ -49,11 +51,13 @@ Template Name: Librairie
 
             <?php
 
-            echo '<br /><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>'; ?>
+            echo '<a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>'; ?>
 
         <?php }
     }
     ?>
+    </div>
+    <div id="ligne_couleur"></div>
 
     <?php
     $args = array( 'post_type' => 'product', 'stock' => 1,'product_cat' => 'Aventure', 'posts_per_page' => 3, 'orderby'
