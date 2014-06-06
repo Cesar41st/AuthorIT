@@ -5,11 +5,11 @@ Template Name: Conditions
 ?>
 <?php get_header(); ?>
 
-<div id="mentionslegales">
+<div id="conditions">
 
     <h2>CONDITIONS</h2>
 
-    <div id="ml-bloc1"
+    <div id="ml-bloc1">
         <h3>Mentions légales</h3>
         <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -19,8 +19,8 @@ Template Name: Conditions
         </p>
     </div>
 
-    <div id="ml-bloc2"
-        <h3>Parti deux</h3>
+    <div id="ml-bloc2">
+        <h3>Partie deux</h3>
         <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros
@@ -29,7 +29,7 @@ Template Name: Conditions
         </p>
     </div>
 
-    <div id="ml-bloc3"
+    <div id="ml-bloc3">
         <h3>Partie trois </h3>
         <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
             Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -39,7 +39,7 @@ Template Name: Conditions
         </p>
     </div>
 
-    <img class="img-responsive" id="header_image" src="<?php bloginfo('template_directory'); ?>/image/header.jpg" alt="" title="" width="1170" height="65">
+    <img class="img-responsive" id="header_image" src="<?php bloginfo('template_directory'); ?>/image/header.jpg" alt="" title="">
 
 </div>
 
