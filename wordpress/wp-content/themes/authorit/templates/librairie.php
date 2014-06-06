@@ -29,6 +29,9 @@ Template Name: Librairie
     <div id="i_id"><i class="fa fa-search"></i></div>
 
     <?php
+    global $wp;
+    $current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ) );
+
     $taxonomy     = 'product_cat';
     $orderby      = 'name';
     $show_count   = 0;      // 1 for yes, 0 for no
@@ -59,7 +62,7 @@ Template Name: Librairie
 
             <?php
 
-            echo '<a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>'; ?>
+            echo '<a href="'.$current_url.''. get_term($cat->slug, 'product_cat') .'">'. $cat->name .'</a>'; ?>
 
         <?php }
     }
