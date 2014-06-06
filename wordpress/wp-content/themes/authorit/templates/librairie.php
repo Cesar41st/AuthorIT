@@ -21,6 +21,41 @@ Template Name: Librairie
     <div id="i_id"><i class="fa fa-search"></i></div>
 
     <?php
+    $taxonomy     = 'product_cat';
+    $orderby      = 'name';
+    $show_count   = 0;      // 1 for yes, 0 for no
+    $pad_counts   = 0;      // 1 for yes, 0 for no
+    $hierarchical = 1;      // 1 for yes, 0 for no
+    $title        = '';
+    $empty        = 0;
+    $args = array(
+        'taxonomy'     => $taxonomy,
+        'orderby'      => $orderby,
+        'show_count'   => $show_count,
+        'pad_counts'   => $pad_counts,
+        'hierarchical' => $hierarchical,
+        'title_li'     => $title,
+        'hide_empty'   => $empty
+    );
+    ?>
+    <?php $all_categories = get_categories( $args );
+    //print_r($all_categories);
+    foreach ($all_categories as $cat) {
+        //print_r($cat);
+        if($cat->category_parent == 0) {
+            $category_id = $cat->term_id;
+
+            ?>
+
+            <?php
+
+            echo '<br /><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>'; ?>
+
+        <?php }
+    }
+    ?>
+
+    <?php
     $args = array( 'post_type' => 'product', 'stock' => 1,'product_cat' => 'Aventure', 'posts_per_page' => 3, 'orderby'
     =>'date','order' => 'DESC');
     $loop = new WP_Query( $args );
