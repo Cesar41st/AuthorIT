@@ -1,6 +1,6 @@
 <?php
 /**
-Template Name: Mentions légales
+Template Name: Conditions
 */
 ?>
 <?php get_header(); ?>
