@@ -30,7 +30,7 @@
                 <p>Lorem ipsum</p>
             </li>
             <li class="footer-block col-xs-12 col-sm-4">
-                <p>Lorem ipsum</p>
+                <p>Mentions légales</p>
             </li>
         </ul>
 
