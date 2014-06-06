@@ -59,3 +59,73 @@ add_action( 'after_setup_theme', 'authorit_setup' );
 
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 20 );
+
+if(function_exists("register_field_group"))
+{
+    register_field_group(array (
+        'id' => 'acf_homepage',
+        'title' => 'homepage',
+        'fields' => array (
+            array (
+                'key' => 'field_538d995440ebc',
+                'label' => 'image slider',
+                'name' => 'image_slider',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'full',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '10',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+    register_field_group(array (
+        'id' => 'acf_librairie-2',
+        'title' => 'librairie',
+        'fields' => array (
+            array (
+                'key' => 'field_5391867f289db',
+                'label' => 'image lib',
+                'name' => 'image_lib',
+                'type' => 'image',
+                'save_format' => 'url',
+                'preview_size' => 'full',
+                'library' => 'all',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'page',
+                    'operator' => '==',
+                    'value' => '8',
+                    'order_no' => 0,
+                    'group_no' => 0,
+                ),
+            ),
+        ),
+        'options' => array (
+            'position' => 'normal',
+            'layout' => 'no_box',
+            'hide_on_screen' => array (
+            ),
+        ),
+        'menu_order' => 0,
+    ));
+}
