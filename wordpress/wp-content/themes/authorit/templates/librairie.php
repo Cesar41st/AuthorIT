@@ -60,8 +60,7 @@ Template Name: Librairie
     <div id="ligne_couleur"></div>
 
     <?php
-    $args = array( 'post_type' => 'product', 'stock' => 1,'product_cat' => 'Aventure', 'posts_per_page' => 3, 'orderby'
-    =>'date','order' => 'DESC');
+    $args = array( 'post_type' => 'product', 'product_cat' => 'Aventure', 'posts_per_page' => 4, 'orderby'=>'date','order' => 'DESC');
     $loop = new WP_Query( $args );
     while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
         <div>
@@ -72,8 +71,9 @@ Template Name: Librairie
                 <h3><?php the_title(); ?></h3>
             </a>
             <span class="price"><?php echo $product->get_price_html(); ?></span>
-     <span class="add-to-cart"><?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
-         ></span>
+            <span class="add-to-cart"><?php woocommerce_template_loop_add_to_cart( $loop->post, $product ); ?>
+            </span>
+            <p><?php the_content(); ?></p>
         </div>
     <?php endwhile; ?>
     <?php wp_reset_query(); ?>
