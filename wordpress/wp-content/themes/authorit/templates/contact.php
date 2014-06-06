@@ -17,12 +17,7 @@ Template Name: Contact
         et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
     </p>
 
-    <form method="post">
-        <input type="text" nom="name" id="nom" autofocus placeholder="Name">
-        <input type="email" nom="email" id="email" placeholder="Email">
-        <input type="url" nom="website" id="website" placeholder="website">
-
-    </form>
+    <!-- PLUGIN CONTACT -->
 
 
 </div>
